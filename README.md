@@ -39,12 +39,14 @@
 | **Dış etken** | **Fırsat:** katalogdaki opsiyonlar (öncü fotosel, halat kopma emniyeti), EN 12453 / IEC 62443 yol haritası, değişken kodlu kumanda, YZ'li kamera ile ek algılama, CRA'nın üreticiye getirdiği yükümlülükler | **Tehdit:** panoda yetkisiz mod değişikliği, kumanda sinyalinin kopyalanması, kayıp kumanda, sahte radar tetiklemesi, test edilmeden uygulanan yama, mevzuat baskısı (AB 2023/1230, CRA) |
 
 ## Özet
-- **Tehlikeler:** kapanan kapının altında ezilme, yay/halat kopmasıyla kapının düşmesi, paneller arasında sıkışma, gergin burulma yayları, 400 V pano
-- **Emniyet fonksiyonları:** kapanırken engel algılanınca durma (fotosel), kapının düşmesini engelleme (yay kırılma ve halat gevşeme emniyeti), bakımda beklenmedik hareketi önleme (servis modu + LOTO)
-- **Kritik bulgu:** fotosel ile kablosuz uzaktan kumanda aynı T100 panoya bağlı; yay ve halat emniyeti ise mekanik olduğu için komutlardan bağımsız
-- **Hedef mimari:** merkezi geçiş kontrolü, değişken kodlu kumanda + kart/PIN, kişiye kayıtlı kumanda, açma-kapama kaydı, varsayılan kapalı erişim
-- **Zafiyet yönetimi:** üreticiden yazılım bileşen listesi (SBOM) istenir; güncellemeler önce tek bir kapıda test edilir, ardından fotosel ve kapanma kuvveti testleri tekrarlanır; güncelleme yoksa kablosuz kumanda girişi kapatılıp kapı elle kullanıma alınır
-- **Olay müdahalesi:** kapı mesai dışında yetkisiz açılırsa ilk iş insanları korumak (kapı altını boşaltmak, fotoselin çalıştığını test etmek), ardından panodaki ayarların fotoğrafını çekerek kanıtı saklamaktır; panoyu resetlemek değiştirilmiş ayarları, yani kanıtı siler; resmî CRA bildirimini üretici (FGI) yapar, depo olayı FGI'ye bildirir
-- **Yapay zekâ:** kapıya forklift ve yayayı algılayan yapay zekâlı bir kamera eklenirse, kamera yalnızca "dur" diyebilmeli, "kapan" diyememeli; kamera yanılsa ya da bozulsa bile fotosel ve mekanik emniyetler kapıyı durdurmaya devam eder
+- **Tehlikeler:** kapanan kapının altında ezilme, yay/halat kopmasıyla kapının düşmesi, paneller arasında sıkışma, gergin burulma yayları, 400 V pano.
+- **Emniyet fonksiyonları:** kapanırken engel algılanınca durma (fotosel), kapının düşmesini engelleme (yay kırılma ve halat gevşeme emniyeti), bakımda beklenmedik hareketi önleme (servis modu + LOTO).
+- **Kritik bulgu:** fotosel ile kablosuz uzaktan kumanda aynı T100 panoya bağlı. Yay ve halat emniyeti ise mekanik olduğu için komutlardan bağımsız.
+- **Hedef mimari:** merkezi geçiş kontrolü, değişken kodlu kumanda + kart/PIN, kişiye kayıtlı kumanda, açma-kapama kaydı, varsayılan kapalı erişim.
+- **Zafiyet yönetimi:** üreticiden yazılım bileşen listesi (SBOM) istenir. Güncellemeler önce tek bir kapıda test edilir, ardından fotosel ve kapanma kuvveti testleri tekrarlanır. Güncelleme yoksa kablosuz kumanda girişi kapatılıp kapı elle kullanıma alınır.
+- **Olay müdahalesi:** kapı mesai dışında yetkisiz açılırsa ilk iş insanları korumak (kapı altını boşaltmak, fotoselin çalıştığını test etmek), ardından panodaki ayarların fotoğrafını çekerek kanıtı saklamaktır. Panoyu resetlemek değiştirilmiş ayarları, yani kanıtı siler. Resmî CRA bildirimini üretici (FGI) yapar, depo olayı FGI'ye bildirir.
+- **Yapay zekâ:** kapıya forklift ve yayayı algılayan yapay zekâlı bir kamera eklenirse, kamera yalnızca "dur" diyebilmeli, "kapan" diyememeli. Kamera yanılsa ya da bozulsa bile fotosel ve mekanik emniyetler kapıyı durdurmaya devam eder.
+
+*Bu föyler bir eğitim çıktısıdır; resmî denetim veya uygunluk değerlendirmesi değildir.*
 
 *Bu föyler bir eğitim çıktısıdır; resmî denetim veya uygunluk değerlendirmesi değildir.*
