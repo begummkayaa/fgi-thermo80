@@ -48,5 +48,3 @@
 - **Yapay zekâ:** kapıya forklift ve yayayı algılayan yapay zekâlı bir kamera eklenirse, kamera yalnızca "dur" diyebilmeli, "kapan" diyememeli. Kamera yanılsa ya da bozulsa bile fotosel ve mekanik emniyetler kapıyı durdurmaya devam eder.
 
 *Bu föyler bir eğitim çıktısıdır; resmî denetim veya uygunluk değerlendirmesi değildir.*
-
-*Bu föyler bir eğitim çıktısıdır; resmî denetim veya uygunluk değerlendirmesi değildir.*
