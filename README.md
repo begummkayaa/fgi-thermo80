@@ -2,7 +2,7 @@
 
 **Ad Soyad:** Begüm Kaya  
 **Grup:** Gece B  
-**Tarih:** 22.10.2026
+**Tarih:** 22.10.2026 (Lab 1-4), 06.11.2026 (Lab 5-7 ve SWOT)
 
 ## Seçilen Makine
 **FGI Kapı ve Yükleme Teknolojileri – Thermo 80 mm Seksiyonel Endüstriyel Kapı**
@@ -16,7 +16,7 @@
 - Yay kırılma emniyeti ve halat gevşeme emniyeti
 - EN 13241 uygunluğu
 
-> Not: Makine bilgileri FGI "Thermo 80 mm" teknik veri sayfasından alınmıştır. Uzaktan kumandanın kodlama tipi ve panoya erişim yetkisi belgede belirtilmediği için föylerde "belgede yok, sahada kontrol edilmeli" olarak ele alınmıştır.
+> Not: Makine bilgileri FGI "Thermo 80 mm" teknik veri sayfasından alınmıştır. Uzaktan kumandanın kodlama tipi, panoya erişim yetkisi, yazılım bileşen listesi (SBOM) ve yazılım sürümü belgede belirtilmediği için föylerde "belgede yok, sahada kontrol edilmeli" olarak ele alınmıştır.
 
 ## Laboratuvarlar
 
@@ -26,11 +26,22 @@
 | 2 | IEC 62443 Mini Workshop | Zone / Conduit Diagram | `Lab2_IEC62443_Mini_Workshop.pdf` |
 | 3 | Threat & Risk + Risk Matrix | Risk Register | `Lab3_Threat_Risk_Matrix.pdf` |
 | 4 | Secure Remote Access | Secure Architecture | `Lab4_Secure_Remote_Access.pdf` |
+| 5 | SBOM / CVE / Patch | Vulnerability Decision | `Lab5_SBOM_CVE_Patch.pdf` |
+| 6 | CRA Incident Simulation | Incident Workflow | `Lab6_CRA_Incident_Simulation.pdf` |
+| 7 | AI Safety Challenge | AI Fail-Safe Decision | `Lab7_AI_Safety_Challenge.pdf` |
+
+## SWOT Analizi
+7 laboratuvarın bulgularına dayanan, makinenin emniyet ve siber güvenlik açısından SWOT analizi: `SWOT_Analizi.pdf`
+
+| | Olumlu | Olumsuz |
+|---|---|---|
+| **İç etken** | **Güçlü:** kapının düşmesine karşı mekanik koruma (yay kırılma + halat gevşeme emniyeti), standart fotosel, internete kapalı yapı, deadman modu | **Zayıf:** fotosel ile uzaktan kumanda aynı T100 panoda, panoya erişim kısıtı yok, kumandalar kişiye kayıtlı değil, açma-kapama kaydı yok, SBOM ve PL beyanı yok |
+| **Dış etken** | **Fırsat:** katalogdaki opsiyonlar (öncü fotosel, halat kopma emniyeti), EN 12453 / IEC 62443 yol haritası, değişken kodlu kumanda, YZ'li kamera ile ek algılama, CRA'nın üreticiye getirdiği yükümlülükler | **Tehdit:** panoda yetkisiz mod değişikliği, kumanda sinyalinin kopyalanması, kayıp kumanda, sahte radar tetiklemesi, test edilmeden uygulanan yama, mevzuat baskısı (AB 2023/1230, CRA) |
 
 ## Özet
 - **Tehlikeler:** kapanan kapının altında ezilme, yay/halat kopmasıyla kapının düşmesi, paneller arasında sıkışma, gergin burulma yayları, 400 V pano
 - **Emniyet fonksiyonları:** kapanırken engel algılanınca durma (fotosel), kapının düşmesini engelleme (yay kırılma ve halat gevşeme emniyeti), bakımda beklenmedik hareketi önleme (servis modu + LOTO)
 - **Kritik bulgu:** fotosel ile kablosuz uzaktan kumanda aynı T100 panoya bağlı; yay ve halat emniyeti ise mekanik olduğu için komutlardan bağımsız
 - **Hedef mimari:** merkezi geçiş kontrolü, değişken kodlu kumanda + kart/PIN, kişiye kayıtlı kumanda, açma-kapama kaydı, varsayılan kapalı erişim
-
-*Bu föyler bir eğitim çıktısıdır; resmî denetim veya uygunluk değerlendirmesi değildir.*
+- **Zafiyet yönetimi (Lab 5):** üreticiden SBOM istenir; yama önce tek kapıda test edilir, sonrasında fotosel ve kapanma kuvveti testi tekrarlanır; yama yoksa kumanda girişi kapatılıp deadman moduna geçilir
+- **Olay müdahalesi (Lab 6):** önce
