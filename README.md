@@ -43,5 +43,8 @@
 - **Emniyet fonksiyonları:** kapanırken engel algılanınca durma (fotosel), kapının düşmesini engelleme (yay kırılma ve halat gevşeme emniyeti), bakımda beklenmedik hareketi önleme (servis modu + LOTO)
 - **Kritik bulgu:** fotosel ile kablosuz uzaktan kumanda aynı T100 panoya bağlı; yay ve halat emniyeti ise mekanik olduğu için komutlardan bağımsız
 - **Hedef mimari:** merkezi geçiş kontrolü, değişken kodlu kumanda + kart/PIN, kişiye kayıtlı kumanda, açma-kapama kaydı, varsayılan kapalı erişim
-- **Zafiyet yönetimi (Lab 5):** üreticiden SBOM istenir; yama önce tek kapıda test edilir, sonrasında fotosel ve kapanma kuvveti testi tekrarlanır; yama yoksa kumanda girişi kapatılıp deadman moduna geçilir
-- **Olay müdahalesi (Lab 6):** önce
+- **Zafiyet yönetimi:** üreticiden yazılım bileşen listesi (SBOM) istenir; güncellemeler önce tek bir kapıda test edilir, ardından fotosel ve kapanma kuvveti testleri tekrarlanır; güncelleme yoksa kablosuz kumanda girişi kapatılıp kapı elle kullanıma alınır
+- **Olay müdahalesi:** kapı mesai dışında yetkisiz açılırsa ilk iş insanları korumak (kapı altını boşaltmak, fotoselin çalıştığını test etmek), ardından panodaki ayarların fotoğrafını çekerek kanıtı saklamaktır; panoyu resetlemek değiştirilmiş ayarları, yani kanıtı siler; resmî CRA bildirimini üretici (FGI) yapar, depo olayı FGI'ye bildirir
+- **Yapay zekâ:** kapıya forklift ve yayayı algılayan yapay zekâlı bir kamera eklenirse, kamera yalnızca "dur" diyebilmeli, "kapan" diyememeli; kamera yanılsa ya da bozulsa bile fotosel ve mekanik emniyetler kapıyı durdurmaya devam eder
+
+*Bu föyler bir eğitim çıktısıdır; resmî denetim veya uygunluk değerlendirmesi değildir.*
